@@ -1,0 +1,11 @@
+{
+  "folders": [
+    { "name": "rust",    "path": "rust_src" },
+    { "name": "elixir",  "path": "elexir_src" },
+    { "name": "python",  "path": "python_src" },
+    { "name": "ROOT",    "path": "." }
+  ],
+  "settings": {
+    "editor.formatOnSave": true
+  }
+}

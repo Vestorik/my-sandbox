@@ -1,0 +1,44 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.egg
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python config & cache
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Elixir
+_build/
+deps/
+*.ez
+elixir-log*
+*.beam
+.erlang.cookie
+
+# IDE & editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
