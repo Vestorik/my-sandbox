@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+
+
+kind: Deployment
+metadata:
+  name: database
+  labels:
+    app: database
+
+spec:
+
+  replicas: 2
+
+
+  selector:
+    matchLabels:
+      app: database
+
+
+  template:
+    metadata:
+      labels:
+        app: database
+
+
+    spec:
+      containers:
+      - name: database
+        image: postgres:alpine
+
+        env:
+        - name: POSTGRES_PASSWORD
+          value: "mysecretpassword"
+        - name: POSTGRES_DB
+          value: "appdb"
+
+        resources:
+
+          requests:
+           cpu: "50m"
+           memory: "64Mi"
+          limits:
+            cpu: "500m"
+            memory: "256Mi"
+        
+        
+        ports:
+        - containerPort: 5432
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: database-service
+
+spec:
+  type: ClusterIP
+  selector:
+    app: database
+  ports:
+  - port: 5432
+    targetPort: 5432

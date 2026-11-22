@@ -5,7 +5,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = ["my-sandbox-langchain", "my-sandbox-other-tools"]
+dependencies = [
+    "my-sandbox-langchain",
+    "my-sandbox-other-tools",
+    "my-sandbox-vdb",
+    "pdf-work-tools",
+]
 
 
 [tool.uv]
@@ -14,7 +19,12 @@ index-url = "https://pypi.org/simple"
 
 
 [tool.uv.workspace]
-members = ["src_code/other_tools", "src_code/agentic/my_sandbox_langchain"]
+members = [
+    "src_code/other_tools",
+    "src_code/agentic/my_sandbox_langchain",
+    "src_code/agentic/my_sandbox_vdb",
+    "src_code/pdf_work_tools",
+]
 
 
 [[tool.uv.index]]
@@ -32,6 +42,8 @@ torchvision = [{ index = "pytorch-cu130" }]
 
 my-sandbox-langchain = { workspace = true }
 my-sandbox-other-tools = { workspace = true }
+my-sandbox-vdb = { workspace = true }
+pdf-worck-tools = { workspace = true }
 
 
 # //----------------------------------------------------------------------
