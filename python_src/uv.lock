@@ -7,7 +7,7 @@ members = [
     "my-sandbox-langchain",
     "my-sandbox-other-tools",
     "my-sandbox-vdb",
-    "pdf-worck-tools",
+    "pdf-work-tools",
     "python-my-sandbox",
 ]
 
@@ -2251,9 +2251,9 @@ wheels = [
 ]
 
 [[package]]
-name = "pdf-worck-tools"
+name = "pdf-work-tools"
 version = "0.1.0"
-source = { editable = "src_code/pdf_worck_tools" }
+source = { editable = "src_code/pdf_work_tools" }
 dependencies = [
     { name = "aiofiles" },
     { name = "pdfplumber" },
@@ -2746,7 +2746,7 @@ dependencies = [
     { name = "my-sandbox-langchain" },
     { name = "my-sandbox-other-tools" },
     { name = "my-sandbox-vdb" },
-    { name = "pdf-worck-tools" },
+    { name = "pdf-work-tools" },
 ]
 
 [package.dev-dependencies]
@@ -2796,7 +2796,7 @@ requires-dist = [
     { name = "my-sandbox-langchain", editable = "src_code/agentic/my_sandbox_langchain" },
     { name = "my-sandbox-other-tools", editable = "src_code/other_tools" },
     { name = "my-sandbox-vdb", editable = "src_code/agentic/my_sandbox_vdb" },
-    { name = "pdf-worck-tools", editable = "src_code/pdf_worck_tools" },
+    { name = "pdf-work-tools", editable = "src_code/pdf_work_tools" },
 ]
 
 [package.metadata.requires-dev]

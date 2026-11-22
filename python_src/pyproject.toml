@@ -43,7 +43,7 @@ torchvision = [{ index = "pytorch-cu130" }]
 my-sandbox-langchain = { workspace = true }
 my-sandbox-other-tools = { workspace = true }
 my-sandbox-vdb = { workspace = true }
-pdf-worck-tools = { workspace = true }
+pdf-work-tools = { workspace = true }
 
 
 # //----------------------------------------------------------------------
